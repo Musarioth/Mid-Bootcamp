@@ -86,7 +86,7 @@ void pop_head() {
 void print_list() {
   curr = head;
   while(curr) {
-    printf("%d %s %d - %[^\n]", curr->list.date, curr->list.month, curr->list.year, curr->list.name);
+    printf("%d %s %d - %s", curr->list.date, curr->list.month, curr->list.year, curr->list.name);
     curr = curr->next;
   }
   puts("");
