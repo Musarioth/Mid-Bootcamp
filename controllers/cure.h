@@ -71,7 +71,8 @@ void add_patient(Patient value){
 }
 
 void pop_head() {
-    if(head && head == tail) {
+    if(!head) return;
+    else if(head && head == tail) {
         head = tail = NULL;
         free(head);
     } 
